@@ -1,0 +1,2 @@
+# pelisapp
+SPA en angular
