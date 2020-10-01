@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand-sm ">
+    <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="router-link-active" >Peliculas</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+      </ul>
+      <div class="d-flex">
+          <input #txtBuscar (keyup.enter)="buscarPelicula( txtBuscar.value)" type="search" class="form-control mr-2 " placeholder="Buscar pelicula" aria-label="Search">
+          <button (click)="buscarPelicula( txtBuscar.value )" class="btn btn-outline-success" type="submit">Buscar</button>
+      </div>
+    </div>
+</nav>
